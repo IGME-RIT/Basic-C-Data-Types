@@ -13,4 +13,4 @@ extra_resources:
     title: More Information about C++ data types.
 connections:
   - series: Basic C++
-    title: Data Types
+    title: Hello World!
