@@ -1,6 +1,6 @@
-# C++ IO: Hello World
+# Basic C++: Data Types
 
-This example shows what a Hello World program looks like in C++, explains how it works, and demonstrates different ways to print hello world with cout.
+This example shows most of the different data types used in C++. It also demonstrates the use of sizeof to get the size of types and variables.
 
 # Setup
 

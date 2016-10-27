@@ -55,6 +55,7 @@ int main()
 
 
 
+
     // SIGNED INTEGERS
     {
         cout << "Signed integer data types:" << endl;
@@ -81,6 +82,9 @@ int main()
         cout << "Press enter to continue..." << endl;
         cin.get();  // Wait for input.
     }
+
+
+
 
 
 
@@ -112,6 +116,11 @@ int main()
 
 
 
+
+
+
+
+
     // CHARACTERS
     {
         cout << "Character data types:" << endl;
@@ -122,18 +131,22 @@ int main()
         // char may actually be either signed or unsigned by default depending on your compiler.
         cout << "Range of char: " << CHAR_MIN << " to " <<CHAR_MAX << endl;
 
-        // A char can be set with an integer or ascii value.
+        // A char can be set with a decimal, hexadecimal, or ascii.
         char a = 97;    // Setting a char with a decimal value.
-        char b = 'b';   // Setting a char with an ascii value.
+        char b = 0x62;  // Setting a char with a hex value.
+        char c = 'c';   // Setting a char with an ascii value.
 
         // Print out the values.
         cout << "a: " << a << endl;
         cout << "b: " << b << endl;
+        cout << "c: " << c << endl;
 
 
         cout << "Press enter to continue..." << endl;
         cin.get();  // Wait for input.
     }
+
+
 
 
 
@@ -148,7 +161,6 @@ int main()
         cout << "Press enter to continue..." << endl;
         cin.get();  // Wait for input.
     }
-
 
 
     // FLOATS
@@ -166,35 +178,14 @@ int main()
         cout << "double:        " << DBL_MIN << " to " << DBL_MAX << endl;
         cout << "long double:   " << LDBL_MIN << " to " << LDBL_MAX << endl;
 
+        // by default, the compiler treats numbers as doubles.
 
         cout << "Press enter to continue..." << endl;
         cin.get();  // Wait for input.
     }
 
 
-    // DEFAULTS
     {
-        cout << "Default numbers:"<< endl;
-
-        // By default, different numbers will be treated as different types depending on how they are written.
-        // Note:    sizeof can be used with a variable instead of a type, and will work similarly.
-        //          In this case, parenthesis are not required.
-
-        cout << "Integer numbers: " << endl;
-        cout << "sizeof 5:          " << sizeof 5 << endl;          // numbers with no decimal are assumed to be integers.
-        cout << "sizeof 9999999999: " << sizeof 9999999999 << endl; // an integer that is sufficiently large enough will be promoted to a long long.
-
-        cout << "Decimal numbers: " << endl;
-        cout << "sizeof 5.:         " << sizeof 5. << endl;         // numbers with a decimal are assumed to be doubles.
-        cout << "sizeof 5.f:        " << sizeof 5.f << endl;        // numbers with a decimal, and trailed by an f, will be treated as floats.    
-
-        // Hex values are really just an alternate way to write integers, and are promoted in the exact same way.
-        cout << "Hex numbers: " << endl;
-        cout << "sizeof 0x5:            " << sizeof 0x5 << endl;
-        cout << "sizeof 0x500000000:    " << sizeof 0x500000000 << endl;
-
-        cout << "Press enter to exit..." << endl;
-        cin.get();  // Wait for input.
     }
 
     return 0;   // End Program.
